@@ -5,10 +5,12 @@ body {
     padding: 0;
 }
 
+/* Header  */
+
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -16,8 +18,65 @@ header h1 {
     margin: 0;
 }
 
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /* border: 1px solid red;  */
+}
 
-nav ul {
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover {
+    background: #696868;
+    transition: 0.5s;
+}
+
+/* Header : Manager */
+
+header ul li ul {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 100px;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 5px;
+    background: white;
+    color: #444;
+}
+
+header ul li ul li a:hover {
+    background: #b2b0b0;
+}
+
+header ul li ul li a:logout {
+    color: red;
+}
+
+header .menu_toggle {
+    display: none;
+}
+
+
+/* nav ul {
     list-style-type: none;
     padding: 0;
     text-align: right;
@@ -31,7 +90,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
+} */
 
 main {
     padding: 20px;
