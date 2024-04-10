@@ -51,6 +51,11 @@ header ul li ul {
     top: 40px;
     right: 0px;
     width: 100px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
 }
 
 header ul li ul li {
@@ -67,8 +72,8 @@ header ul li ul li a:hover {
     background: #b2b0b0;
 }
 
-header ul li ul li a:logout {
-    color: red;
+header ul li ul li a.logout {
+    color: rgba(255, 0, 0, 0.733);
 }
 
 header .menu_toggle {
